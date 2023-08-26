@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STech - Custom Keyboard & Gaming Gear</title>
+    <title>STech</title>
     <!-------------------------------------->
     <link rel="shortcut icon" href="Logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -23,7 +23,7 @@
         <div class="container-xxl">
             <div class="header">
                 <a href="index.html" class="logo">
-                    <img src="Logo/STech-Logo.png" alt="Stech Logo">
+                    <img src="Logo/stech-logo.png" alt="Stech Logo">
                 </a>
                 <form action="#" class="search">
                     <input type="text" class="search-box" placeholder="Tìm kiếm sản phẩm">
@@ -35,18 +35,31 @@
                        <b>0123456789</b>
                     </span>
                 </div>
+                <div class="order-check">
+                    <a href="#">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <span>Tra cứu đơn hàng</span>
+                    </a>
+                </div>
                 <div class="header-btn">
-                    <div class="login-btn">
-                        <i class="fa-regular fa-user login-btn"></i>
-                    </div>
                     <div class="favorite-btn">
-                        <i class="fa-regular fa-heart"></i>
-                        <div class="favorite-btn-quantity">0</div>
+                       <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="favorite-btn-quantity">0</div>
+                       </a>
                     </div>
                     <div class="cart-btn">
-                        <ion-icon name="cart-outline"></ion-icon>
-                        <div class="cart-btn-quantity">0</div>
+                        <a href="#">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <div class="cart-btn-quantity">0</div>
+                        </a>
                     </div>
+                </div>
+                <div class="login-btn">
+                    <a href="#">
+                        <i class="fa-regular fa-user login-btn"></i>
+                        <span>Đăng nhập</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,33 +72,27 @@
                     <i class="fa-solid fa-bars"></i>
                     <span>Danh mục</span>
                 </div>
-                <div class="dropdown">
-                    <div class="dropdown-btn">
-                        <a href="#">Group Buy</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-                    <ul class="dropdown-content">
-                        <li>
-                             <a href="#">Keyboard</a>
-                         </li>
-                         <li>
-                             <a href="#">Keycap</a></li>
-                         <li>
-                             <a href="#">Switch</a>
-                         </li>
-                         <li>
-                             <a href="#">Khác</a>
-                         </li>
-                     </ul>
-                    <div >
-                       
-                    </div>
-                </div>
-                <a href="#">Tổng hợp khuyến mãi</a>
-                <a href="#">Driver & Software</a>
-                <a href="#">Hệ thống Showroom</a>
-                <a href="#">Tin tức</a>
-                <a href="#">Liên hệ</a>
+               
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-tags nav-icon"></i>
+                    <span>Tổng hợp khuyến mãi</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-screwdriver-wrench nav-icon"></i>
+                    <span>Chính sách bảo hành</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-money-check-dollar nav-icon"></i>
+                    <span>Hướng dẫn thanh toán</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-newspaper nav-icon"></i>
+                    <span>Tin tức</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-phone nav-icon"></i>
+                    <span>Liên hệ</span>
+                </a>
             </div>
         </div>
     </nav>
@@ -93,23 +100,265 @@
     <main>
         <div class="container-xxl">
             <section class="menu">
-                <div class="sidebar-menu loading"></div>
-                <div class="slider loading"></div>
+                <div class="sidebar">
+                    <ul class="megamenu">
+                        <li class="megamenu-item">
+                            <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-laptop megamenu-icon"></i>
+                                    Laptop
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                            </div>
+                            <div class="megamenu-content">
+
+                            </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-laptop megamenu-icon"></i>
+                                    Laptop Gaming
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-computer megamenu-icon"></i>
+                                    PC Gaming
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-computer megamenu-icon"></i>
+                                    PC Làm Việc
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-microchip megamenu-icon"></i>
+                                    Linh Kiện PC
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                            <div class="megamenu-content">
+
+                            </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-memory megamenu-icon"></i>
+                                    Bộ Nhớ Lưu Trữ
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                            <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-brands fa-apple megamenu-icon"></i>
+                                    Apple
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                            </div>
+                            <div class="megamenu-content">
+
+                            </div>
+                        </li>
+                        <li class="megamenu-item">
+                            <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-tv megamenu-icon"></i>
+                                    Màn Hình
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                            </div>
+                            <div class="megamenu-content">
+
+                            </div>
+                        </li>
+                        <li class="megamenu-item">
+                            <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-keyboard megamenu-icon"></i>
+                                    Bàn Phím
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                            </div>
+                            <div class="megamenu-content">
+
+                            </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-computer-mouse megamenu-icon"></i> 
+                                    Chuột - Lót Chuột
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-headphones megamenu-icon"></i> 
+                                    Tai Nghe - Loa
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-gamepad megamenu-icon"></i>
+                                    Phụ Kiện
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                           <div class="megamenu-item-box">
+                                <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-wifi megamenu-icon"></i>
+                                    Phần Mềm & Mạng
+                                </a>
+                                <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                           </div>
+                           <div class="megamenu-content">
+
+                           </div>
+                        </li>
+                        <li class="megamenu-item">
+                            <div class="megamenu-item-box">
+                                 <a href="" class="megamenu-link">
+                                    <i class="fa-solid fa-bag-shopping megamenu-icon"></i>
+                                    Group Buy - Đặt Trước
+                                 </a>
+                                 <i class="fa-solid fa-chevron-right megamenu-chevron"></i>
+                            </div>
+                            <div class="megamenu-content">
+ 
+                            </div>
+                         </li>
+                    </ul>
+                </div>
+                <div class="slider">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="Images/slider-images/aorus-rtx-40s.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="Images/slider-images/rog-strix-laptop.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
             </section>
-            <section class="policy loading">
+            <section class="policy">
+                <div class="policy-item">
+                    <i class="fa-solid fa-truck-fast policy-icon"></i>
+                    <div class="policy-content-box">
+                        <div class="policy-content">Đảm bảo đúng hẹn</div>
+                        <div class="sub-policy-content">Hoàn lại tiền trong 30 ngày</div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <i class="fa-solid fa-wallet policy-icon"></i>
+                    <div class="policy-content-box">
+                        <div class="policy-content">Miến phí vận chuyển</div>
+                        <div class="sub-policy-content">Cho đơn hàng trong bán kính 5km</div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <i class="fa-solid fa-comments policy-icon"></i>
+                    <div class="policy-content-box">
+                        <div class="policy-content">Hỗ trợ trực tuyến</div>
+                        <div class="sub-policy-content">Chúng tôi hỗ trỡ 24/24</div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <i class="fa-solid fa-gift policy-icon"></i>
+                    <div class="policy-content-box">
+                        <div class="policy-content">Khuyến mãi</div>
+                        <div class="sub-policy-content">Nhiều khuyến mãi hấp dẫn</div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-1">
+                <div class="banner-1-content">
+                    <img src="Images/banner-images/banner-1-img-1.png" alt="">
+                </div>
+                <div class="banner-1-content">
+                    <img src="Images/banner-images/banner-1-img-1.png" alt="">
+                </div>
+                <div class="banner-1-content">
+                    <img src="Images/banner-images/banner-1-img-1.png" alt="">
+                </div>
+            </section>
+            <section class="sale">
 
             </section>
-            <section class="sale loading">
-
-            </section>
-            <section class="banner">
-                <div class="banner-content">
+            <section class="banner-2">
+                <div class="banner-2-content">
                     <img src="https://file.hstatic.net/200000722513/file/rog-ally-1000x320_c7b23a05f7004165bcf837e39d1011c1.png" alt="">
                 </div>
-                <div class="banner-content loading">
+                <div class="banner-2-content">
                     <img src="" alt="">
                 </div>
             </section>
+            <section class="section-categories">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <a href="#">Danh mục sản phẩm</a>
+                    </h2>
+                </div>
+                <div class="category-items">
+
+                </div>
+            </section>
             <section class="section-collection">
                 <div class="section-header">
                     <div class="section-header-box">
@@ -127,27 +376,27 @@
                 </div>
                 <div class="section-content">
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
@@ -170,70 +419,27 @@
                 </div>
                 <div class="section-content">
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-collection">
-                <div class="section-header">
-                    <div class="section-header-box">
-                        <h2 class="section-title">
-                            <a href="#">Sản phẩm bán chạy</a>
-                        </h2>
-                        <div class="section-sub-header-box">
-                            <i class="fa-solid fa-truck"></i>
-                            <span>Miễn phí giao hàng</span>
-                        </div>
-                    </div>
-                    <div class="section-header-link">
-                        <a href="#">Xem tất cả</a>
-                    </div>
-                </div>
-                <div class="section-content">
-                    <div class="section-content-item">
-                        <div class="section-collection-box loading">
-
-                        </div>
-                    </div>
-                    <div class="section-content-item">
-                        <div class="section-collection-box loading">
-
-                        </div>
-                    </div>
-                    <div class="section-content-item">
-                        <div class="section-collection-box loading">
-
-                        </div>
-                    </div>
-                    <div class="section-content-item">
-                        <div class="section-collection-box loading">
-
-                        </div>
-                    </div>
-                    <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
@@ -256,35 +462,118 @@
                 </div>
                 <div class="section-content">
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                     <div class="section-content-item">
-                        <div class="section-collection-box loading">
+                        <div class="section-collection-box">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-collection">
+                <div class="section-header">
+                    <div class="section-header-box">
+                        <h2 class="section-title">
+                            <a href="#">Sản phẩm bán chạy</a>
+                        </h2>
+                        <div class="section-sub-header-box">
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Miễn phí giao hàng</span>
+                        </div>
+                    </div>
+                    <div class="section-header-link">
+                        <a href="#">Xem tất cả</a>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="section-content-item">
+                        <div class="section-collection-box">
+
+                        </div>
+                    </div>
+                    <div class="section-content-item">
+                        <div class="section-collection-box">
+
+                        </div>
+                    </div>
+                    <div class="section-content-item">
+                        <div class="section-collection-box">
+
+                        </div>
+                    </div>
+                    <div class="section-content-item">
+                        <div class="section-collection-box">
+
+                        </div>
+                    </div>
+                    <div class="section-content-item">
+                        <div class="section-collection-box">
 
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section-brands">
-                <div class="brand-item">
-                    
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <a href="#">Thương hiệu nổi bật</a>
+                    </h2>
+                </div>
+                <div class="brand-collections">
+                    <div class="brand-item">
+                       <a href="#">
+                            <img src="Images/brands-logo/asus-logo.png" alt="Asus Logo">
+                       </a>
+                    </div>
+                    <div class="brand-item">
+                        <a href="#">
+                            <img src="Images/brands-logo/razer-logo.jpg" alt="Razer Logo">
+                        </a>
+                    </div>
+                    <div class="brand-item">
+                        <a href="#">
+                            <img src="Images/brands-logo/logitech-logo.png" alt="Logitech Logo">
+                        </a>
+                    </div>
+                    <div class="brand-item">
+                        <a href="#">
+                            <img src="Images/brands-logo/pulsar-logo.png" alt="Pulsar Logo">
+                        </a>
+                    </div>
+                    <div class="brand-item">
+                        <a href="#">
+                            <img src="Images/brands-logo/glorious-logo.png" alt="Glorious Logo">
+                        </a>
+                    </div>
+                    <div class="brand-item">
+                        <a href="#">
+                            <img src="Images/brands-logo/hyperx-logo.png" alt="Hyperx Logo">
+                        </a>
+                    </div>
+                    <div class="brand-item">
+                        <a href="#">
+                            <img src="Images/brands-logo/steelseries-logo.png" alt="Steelseries Logo">
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
