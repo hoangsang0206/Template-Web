@@ -286,7 +286,7 @@ main {
     position: relative;
 }
 
-.megamenu-item:hover {
+.megamenu-item:hover .megamenu-item-box {
     background: #e30019;
     color: #ffff;
 }
@@ -299,7 +299,7 @@ main {
     display: block;
 }
 .megamenu-item:hover .megamenu-content {
-    display: block;
+    display: grid;
 }
 .megamenu-item-box::after {
     content: '';
@@ -308,10 +308,10 @@ main {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -1.7rem;
+    right: -1.4rem;
     border-top: 1.4rem solid transparent;
     border-bottom: 1.4rem solid transparent;
-    border-left: 1.6rem solid #e30019;
+    border-left: 1.4rem solid #e30019;
     display: none;
     z-index: 11;
 }
@@ -335,6 +335,7 @@ main {
 
 .megamenu-content {
     background: #ffff;
+    padding: 0.7rem 0;
     position: absolute;
     width: 79.7%;
     height: 100%;
@@ -343,7 +344,36 @@ main {
     right: 0;
     overflow: hidden;
     display: none;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     border: 1px solid red;
+}
+
+.megamenu-content-item {
+    padding: 0 1.3rem;
+}
+
+.megamenu-item-title {
+    text-decoration: none;
+    color: #e30019;
+    font-weight: 600;
+}
+
+.megamenu-item-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.megamenu-item-list-link {
+    line-height: 2rem;
+}
+
+.megamenu-item-list-link a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.megamenu-item-list-link a:hover {
+    color: #e30019;
 }
 
 .slider {
