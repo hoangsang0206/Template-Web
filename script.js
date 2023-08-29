@@ -28,4 +28,15 @@ scrollTopBtn.onclick = function () {
     document.documentElement.scrollTop = 0;
   };
 
-  //
+//Slick Slider ------------------------------------------------------------------------
+$(document).ready(function() {
+    $(".sale-slick-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></button>`,
+        dots: true
+    });
+});
