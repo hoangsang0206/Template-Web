@@ -21,7 +21,7 @@
         <div class="top-header">
         </div>
         <div class="container-xxl">
-            <div class="header">
+            <div id="header">
                 <a href="index.html" class="logo">
                     <img src="Images/Logo/stech-logo.png" alt="Stech Logo">
                 </a>
@@ -30,21 +30,21 @@
                     <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="header-hotline">
-                    <i class="fa-solid fa-phone-volume"></i>
+                    <i class="fa-solid fa-phone-volume header-icon"></i>
                     <span>Hotline: <br/>
                        <b>0123456789</b>
                     </span>
                 </div>
                 <div class="order-check">
                     <a href="#">
-                        <i class="fa-regular fa-clipboard"></i>
+                        <i class="fa-regular fa-clipboard header-icon"></i>
                         <span>Tra cứu đơn hàng</span>
                     </a>
                 </div>
                 <div class="header-btn">
                     <div class="favorite-btn">
                        <a href="#">
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-heart header-icon"></i>
                             <div class="favorite-btn-quantity">0</div>
                        </a>
                     </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="login-btn">
                     <a href="#">
-                        <i class="fa-regular fa-user login-btn"></i>
+                        <i class="fa-regular fa-user header-icon login-btn"></i>
                         <span>Đăng nhập</span>
                     </a>
                 </div>
@@ -1007,7 +1007,12 @@
                 </div>
             </section>
             <section class="sale">
-
+                <div class="sale-header">
+                    <i class="fa-sharp fa-solid fa-bolt fa-beat-fade"></i>
+                    <h2>FLASH SALE</h2>
+                </div>
+                <div class="sale-content">
+                </div>
             </section>
             <section class="banner-2">
                 <div class="banner-2-content">
@@ -1023,8 +1028,15 @@
                         <a href="#">Danh mục sản phẩm</a>
                     </h2>
                 </div>
-                <div class="category-items">
-
+                <div class="section-categories-items">
+                    <div class="category-item">
+                        <div class="category-item-image">
+                            <img src="https://file.hstatic.net/200000636033/file/icon1_ce115f32db874a8e9b5af39517176e96.png" alt="" class="category-item-img">
+                        </div>
+                        <span class="category-item-name">
+                            Laptop
+                        </span>
+                    </div>
                 </div>
             </section>
             <section class="section-collection">
@@ -1320,6 +1332,9 @@
         </div>
     </footer>
 
+    <button class="to-top-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <section class="overlay"></section>
 
     <!-------------------------------------->
