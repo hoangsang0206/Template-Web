@@ -1,15 +1,24 @@
 //Show overlay when click category button -------------------------------------------
 const categoryBtn = document.querySelector(".category-btn");
 const overlay = document.querySelector(".overlay");
+const hiddenMenu = document.querySelector(".hidden-menu");
 
 categoryBtn.addEventListener("click", function() {
     overlay.classList.toggle("showOverlay");
-    document.body.classList.toggle("web-scroll-block");
+    hiddenMenu.classList.toggle("showHiddenMenu");
+    //document.body.classList.toggle("web-scroll-block");
 });
 
 overlay.addEventListener("click", function() {
     overlay.classList.toggle("showOverlay");
-    document.body.classList.toggle("web-scroll-block");
+    hiddenMenu.classList.toggle("showHiddenMenu");
+    //document.body.classList.toggle("web-scroll-block");
+});
+
+hiddenMenu.addEventListener("click", function() {
+    overlay.classList.toggle("showOverlay");
+    hiddenMenu.classList.toggle("showHiddenMenu");
+    //document.body.classList.toggle("web-scroll-block");
 });
 
 //Show scroll to top button ----------------------------------------------------------
