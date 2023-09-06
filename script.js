@@ -57,3 +57,23 @@ $(document).ready(function() {
         ]
     });
 });
+
+//Slick Slider for Collection in main page
+$(document).ready(function() {
+    $(".collection-slick-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></button>`,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    })
+});
