@@ -7,18 +7,18 @@
 }
 
 /* Tùy chỉnh màu cuộn (cả cuộn thẳng và cuộn khi hover) */
-::-webkit-scrollbar {
-    width: 4px;
+/* ::-webkit-scrollbar {
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #919191; /* Màu của thanh cuộn */
+    background-color: #919191;
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #606060; /* Màu khi hover */
-}
+    background-color: #606060;
+} */
 
 .web-scroll-block {
     overflow: hidden;
@@ -82,15 +82,25 @@ header {
     color: #ffff;
 }
 
-.logo {
+.header-box {
     width: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
 }
 
 .logo img {
     width: 100%;
 }
 
-.category-btn {
+.mobile-logo {
+    display: none;
+}
+
+.categories-btn {
     background: #be1529;
     border-radius: 0.2rem;
     font-weight: 500;
@@ -102,8 +112,12 @@ header {
     cursor: pointer;
 }
 
-.category-btn i {
+.categories-btn i {
     font-size: 1.3rem;
+}
+
+.mobile-categories-btn {
+    display: none;
 }
 
 .search {
@@ -165,32 +179,9 @@ header {
     align-items: center;
 }
 
-.header-btn i {
-    margin-right: 1.4rem;
-}
-
 .cart-btn ion-icon {
     font-size: 2.1rem;
     display: flex;
-}
-
-.favorite-btn {
-    position: relative;
-}
-
-.favorite-btn-quantity {
-    font-size: 0.7rem;
-    color: #000000;
-    font-weight: 700;
-    display: grid;
-    place-items: center;
-    padding: 0.2rem 0.5rem;
-    aspect-ratio: 2/1;
-    border-radius: 50%;
-    background-color: #fdd835;
-    position: absolute;
-    top: -50%;
-    right: 9%;
 }
 
 .cart-btn {
@@ -198,19 +189,35 @@ header {
     padding-right: 0.9rem;
 }
 
-.cart-btn-quantity {
-    font-size: 0.7rem;
-    color: #000000;
-    font-weight: 700;
+.cart-btn a {
+    display: flex;
+    align-items: center;
+}
+
+.cart-btn span {
+    font-weight: 500;
+    margin-left: 0.4rem;
+}
+
+.cart-count-holder {
     display: grid;
     place-items: center;
-    padding: 0.2rem 0.5rem;
-    aspect-ratio: 2/1;
+    padding: 0.15rem 0.25rem;
+    aspect-ratio: 5/1;
     border-radius: 50%;
     background-color: #fdd835;
     position: absolute;
-    top: -37%;
-    right: 0;
+    top: 5%;
+    left: 18%;
+}
+
+.cart-count {
+    display: grid;
+    padding: 0;
+    place-items: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #000000;
 }
 
 .login-btn {
@@ -439,11 +446,10 @@ main .container-xxl {
 
 .policy {
     display: flex;
-    padding: 2.3rem 2rem;
+    padding: 1.5rem 2rem;
     justify-content: space-between;
     align-items: center;
     background: #ffff;
-    height: 4rem;
     margin-top: 1rem;
     border-radius: 0.2rem;
     overflow: hidden;
@@ -510,6 +516,14 @@ main .container-xxl {
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
+}
+
+.countdown {
+    background: #ffff;
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sale-content {
@@ -833,3 +847,132 @@ footer {
 }
 
 /*---Responsive --------------------------------------------------------------*/
+
+/* For mobile (width < 768px) ---------------------------------------------*/
+@media screen and (max-width: 767px)
+{
+    * {
+        font-size: 0.88rem;
+    }
+
+    /* ::-webkit-scrollbar {
+        height: 2px;
+    } */
+
+    header {
+        position: static;
+    }
+
+    #header {
+        height: 5rem;
+    }
+
+    .header-icon {
+        font-size: 1.5rem;
+    }
+
+    .header-box {
+        width: auto;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .mobile-logo img {
+        height: 3.7rem;
+    }
+
+    .categories-btn {
+        display: none;
+    }
+
+    .mobile-categories-btn {
+        display: block;
+        margin-right: 0.5rem;
+    }
+
+    .mobile-categories-btn i {
+        font-size: 1.8rem;
+    }
+
+    .search {
+        width: 60%;
+    }
+
+    .header-hotline {
+        display: none;
+    }
+
+    .order-check {
+        display: none;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .cart-btn {
+        padding: 0;
+    }
+
+    .cart-btn ion-icon {
+        font-size: 2.1rem;
+    }
+
+    .cart-btn span {
+        display: none;
+    }
+
+    .cart-count-holder {
+        top: -10%;
+        left: 35%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .policy {
+        padding: 0.8rem;
+        overflow-x: scroll;
+        
+    }
+
+    .policy-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .policy-content-box {
+        width: 10rem;
+    }
+
+    .banner-1 {
+        overflow-x: scroll;
+        display: grid;
+        grid-template-columns: 45% 45% 45%;
+    }
+
+    .banner-1-content {
+        width: 100%;
+    }
+
+}
+
+/* For tablet (767 < width < 1024px) ---------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+}

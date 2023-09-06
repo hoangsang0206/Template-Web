@@ -1,5 +1,5 @@
 //Show overlay when click category button -------------------------------------------
-const categoryBtn = document.querySelector(".category-btn");
+const categoryBtn = document.querySelector(".categories-btn");
 const overlay = document.querySelector(".overlay");
 const hiddenMenu = document.querySelector(".hidden-menu");
 
@@ -46,6 +46,14 @@ $(document).ready(function() {
         arrows: true,
         prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></button>`,
         nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></button>`,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 });

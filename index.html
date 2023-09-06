@@ -25,10 +25,18 @@
         </div>
         <div class="container-xxl">
             <div id="header">
-                <a href="index.html" class="logo">
-                    <img src="Images/Logo/stech-logo.png" alt="Stech Logo">
-                </a>
-                <div class="category-btn">
+                <div class="header-box">
+                    <div class="mobile-categories-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="index.html" class="mobile-logo">
+                        <img src="Images/Logo/stech-logo-mobile.png" alt="Stech Logo">
+                    </a>
+                    <a href="index.html" class="logo">
+                        <img src="Images/Logo/stech-logo.png" alt="Stech Logo">
+                    </a>
+                </div>
+                <div class="categories-btn">
                     <i class="fa-solid fa-bars"></i>
                     <span>Danh mục</span>
                 </div>
@@ -49,16 +57,13 @@
                     </a>
                 </div>
                 <div class="header-btn">
-                    <div class="favorite-btn">
-                       <a href="#">
-                            <i class="fa-regular fa-heart header-icon"></i>
-                            <div class="favorite-btn-quantity">0</div>
-                       </a>
-                    </div>
                     <div class="cart-btn">
                         <a href="#">
                             <ion-icon name="cart-outline"></ion-icon>
-                            <div class="cart-btn-quantity">0</div>
+                            <div class="cart-count-holder">
+                                <div class="cart-count">99</div>
+                            </div>
+                            <span>Giỏ <br>hàng</span>
                         </a>
                     </div>
                 </div>
@@ -1859,6 +1864,13 @@
             </section>
             <section class="sale">
                 <div class="sale-header">
+                    <div class="countdown">
+                       <div class="countdown-day">2</div>
+                       <span class="countdown-colon">:</span>
+                       <div class="countdown-hour">1</div>
+                       <span class="countdown-colon">:</span>
+                       <div class="countdown-minute">1</div>
+                    </div>
                     <i class="fa-sharp fa-solid fa-bolt fa-beat-fade"></i>
                     <h2>FLASH SALE</h2>
                 </div>
