@@ -280,7 +280,6 @@ nav {
     display: flex;
     align-items: center;
     border-right: 2px solid #cfcfcf;
-    z-index: 10;
 }
 
 .category-nav i {
@@ -381,7 +380,7 @@ main .container-xxl {
     width: 85%;
     color: #000000;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .megamenu-icon {
@@ -435,6 +434,22 @@ main .container-xxl {
 
 .megamenu-item-list-link a:hover {
     color: #e30019;
+}
+
+.mobile-sidebar {
+    width: 80%;
+    height: 100vh;
+    background: #00cfde;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all .3s ease;
+    overflow-y: scroll;
+    z-index: 25;
+}
+
+.showMobileSidebar {
+    left: 0;
 }
 
 .slider {
@@ -885,7 +900,7 @@ footer {
 @media screen and (max-width: 767px)
 {
     * {
-        font-size: 0.88rem;
+        font-size: 0.9rem;
     }
 
     /* ::-webkit-scrollbar {
@@ -894,6 +909,7 @@ footer {
 
     header {
         position: static;
+        z-index: 10;
     }
 
     #header {
@@ -926,7 +942,7 @@ footer {
 
     .mobile-categories-btn {
         display: block;
-        margin-right: 0.5rem;
+        margin-right: 0.7rem;
     }
 
     .mobile-categories-btn i {
@@ -1025,7 +1041,7 @@ footer {
 
     .sale-item-name {
         overflow: hidden;
-        text-wrap: nowrap;
+        text-wrap: wrap;
         text-overflow: ellipsis;
     }
 

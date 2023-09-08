@@ -1,24 +1,19 @@
 //Show overlay when click category button -------------------------------------------
-const categoryBtn = document.querySelector(".categories-btn");
-const overlay = document.querySelector(".overlay");
-const hiddenMenu = document.querySelector(".hidden-menu");
-
-categoryBtn.addEventListener("click", function() {
-    overlay.classList.toggle("showOverlay");
-    hiddenMenu.classList.toggle("showHiddenMenu");
-    //document.body.classList.toggle("web-scroll-block");
-});
-
-overlay.addEventListener("click", function() {
-    overlay.classList.toggle("showOverlay");
-    hiddenMenu.classList.toggle("showHiddenMenu");
-    //document.body.classList.toggle("web-scroll-block");
-});
-
-hiddenMenu.addEventListener("click", function() {
-    overlay.classList.toggle("showOverlay");
-    hiddenMenu.classList.toggle("showHiddenMenu");
-    //document.body.classList.toggle("web-scroll-block");
+$(document).ready(function() {
+    $(".categories-btn").click(() => {
+        $(".hidden-menu").toggleClass("showHiddenMenu");
+        $(".hidden-menu").click(() => {
+            $(".hidden-menu").removeClass("showHiddenMenu");
+            $(".overlay").removeClass("showOverlay");
+        });
+        $(".overlay").toggleClass("showOverlay");
+        $(".overlay").click(() => {
+            $(".hidden-menu").removeClass("showHiddenMenu");
+        });
+    });
+    $(".overlay").click(() => {
+        $(".overlay").removeClass("showOverlay");
+    });
 });
 
 //Show scroll to top button ----------------------------------------------------------
@@ -35,7 +30,20 @@ window.onscroll = function() {
 scrollTopBtn.onclick = function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  };
+};
+
+//Show sidebar menu ------------------------------------------------------------------------
+$(document).ready(function() {
+    $(".mobile-categories-btn").click(function() {
+        $(".mobile-sidebar").addClass("showMobileSidebar");
+        $(".overlay").addClass("showOverlay");
+        $(".overlay").click(function() {
+            $(".mobile-sidebar").removeClass("showMobileSidebar");
+            $("body").removeClass("web-scroll-block");
+        });
+        $("body").addClass("web-scroll-block");
+    });
+});
 
 //Slick Slider ------------------------------------------------------------------------
 $(document).ready(function() {
@@ -51,7 +59,8 @@ $(document).ready(function() {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 2.3,
+                    arrows: false
                 }
             }
         ]
@@ -71,7 +80,8 @@ $(document).ready(function() {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 2.3,
+                    arrows: false
                 }
             }
         ]
