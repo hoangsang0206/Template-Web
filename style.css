@@ -571,29 +571,34 @@ main .container-xxl {
     padding: 0 0.3rem;
 }
 
-.sale-item {
+.product-box {
     background: #ffff;
     border-radius: 0.2rem;
     padding: 0.7rem;
     overflow: hidden;
 }
 
-.sale-item-name {
+.product-name {
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
-.sale-item-img {
+.product-img {
     width: 100%;
 }
 
-.sale-item-original-price {
+.product-original-price {
     text-decoration: line-through;
     color: #6d6e72;
     line-height: normal;
     margin-top: 0.7rem;
 }
 
-.sale-item-price {
+.product-price {
     color: #e30019;
     font-weight: 600;
     font-size: 1.2rem;
@@ -788,11 +793,7 @@ main .container-xxl {
     margin-top: 1rem;
 }
 
-.collection-slick-slider-item {
-    padding: 0 0.3rem;
-}
-
-.collection-item {
+.collection-slick-slider .product-box {
     border: 1px solid #e5e5e5;
     border-radius: 0.2rem;
     padding: 0.7rem;

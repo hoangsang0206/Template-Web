@@ -55,11 +55,12 @@ $(document).ready(function() {
         prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></button>`,
         nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></button>`,
         dots: true,
+        swipeToSlide: true,
         responsive: [
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2.3,
+                    slidesToShow: 2.2,
                     arrows: false
                 }
             }
@@ -74,13 +75,14 @@ $(document).ready(function() {
         slidesToScroll: 1,
         infinite: false,
         arrows: true,
+        swipeToSlide: true,
         prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></button>`,
         nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></button>`,
         responsive: [
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2.3,
+                    slidesToShow: 2.2,
                     arrows: false
                 }
             }
