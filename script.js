@@ -33,16 +33,35 @@ scrollTopBtn.onclick = function () {
 };
 
 //Show sidebar menu ------------------------------------------------------------------------
-$(document).ready(function() {
-    $(".mobile-categories-btn").click(function() {
-        $(".mobile-sidebar").addClass("showMobileSidebar");
+function showSidebar() {
+    $(".mobile-sidebar").addClass("showMobileSidebar");
         $(".overlay").addClass("showOverlay");
         $(".overlay").click(function() {
             $(".mobile-sidebar").removeClass("showMobileSidebar");
             $("body").removeClass("web-scroll-block");
         });
         $("body").addClass("web-scroll-block");
-    });
+};
+
+$(document).ready(function() {
+    $(".mobile-categories-btn").click(showSidebar);
+    $(".bottom-nav-show-sidebar").click(showSidebar);
+});
+
+
+//Show bottom navigation --------------------------------------------------------------
+$(document).ready(function() {
+    let preScrollPos = window.scrollY;
+    $(window).scroll(() => {
+        const currentScrollPos = window.scrollY;
+        if(currentScrollPos > preScrollPos) {
+            $(".bottom-nav-mobile").addClass("showBottomNav");
+        }
+        else {
+            $(".bottom-nav-mobile").removeClass("showBottomNav");
+        }
+        preScrollPos = currentScrollPos;
+    })
 });
 
 //Slick Slider ------------------------------------------------------------------------
@@ -88,4 +107,16 @@ $(document).ready(function() {
             }
         ]
     })
+});
+
+//Show footer columt content -----------------------------------------------------------
+
+$(document).ready(function() {
+    var footerColArr = $(".footer-col").toArray();
+    footerColArr.forEach(item => {
+        var _item = $(item);
+        _item.children(".footer-title").click(() => {
+            _item.toggleClass("activeFooter");
+        });
+    });
 });

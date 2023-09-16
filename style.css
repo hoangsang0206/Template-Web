@@ -293,6 +293,41 @@ nav {
     font-weight: 500;
 }
 
+.bottom-nav-mobile {
+    border-top: 2px solid #e30019;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0 0.6rem;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    bottom: -30%;
+    display: none;
+    transition: .5s all ease;
+}
+
+.showBottomNav {
+    bottom: 0;
+}
+
+.bottom-nav-link {
+    padding: 0.3rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+.bottom-nav-link span {
+    font-size: 0.85rem;
+}
+
+.nav-link-active {
+    color: #e30019;
+}
+
+.bottom-nav-icon {
+    font-size: 1.75rem;
+}
+
 main {
     padding: 0.8rem 0 2rem 0;
     background: #ececec;
@@ -394,8 +429,8 @@ main .container-xxl {
 }
 
 .megamenu-content {
-    background: #ffff;
-    /* background: #ffffffea; */
+    background: #ffffffef;
+    backdrop-filter: blur(6px);
     padding: 0.7rem 0;
     position: absolute;
     width: 79.7%;
@@ -440,7 +475,7 @@ main .container-xxl {
     width: 80%;
     height: 100vh;
     background: #00cfde;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     transition: all .3s ease;
@@ -828,9 +863,52 @@ footer {
     padding: 2rem 0;
 }
 
+footer a:hover {
+    color: #e30019;
+    text-decoration: underline;
+}
+
 .footer-title {
     font-weight: bold;
 }
+
+.icon-title {
+    display: none;
+    position: relative;
+}
+
+.icon-title::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #5e5e5e;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.icon-title::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: #5e5e5e;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.footer-col.activeFooter .footer-content {
+    position: static;
+    top: 0;
+    opacity: 1;
+}
+
+.footer-col.activeFooter .icon-title::before, .footer-col.activeFooter .icon-title::after {
+    transform: rotate(-180deg);
+    transition: all .5s ease;
+}
+
 
 .footer-content {
     display: flex;
@@ -854,6 +932,24 @@ footer {
 
 .footer-list-info p span:nth-child(2) {
     font-weight: bold;
+}
+
+.footer-delivery  {
+    padding: 0.3rem 0 0.8rem 0;
+    gap: 1rem; 
+}
+
+.delivery-logo {
+    width: 25%;
+}
+
+.footer-paylist {
+    padding: 0.3rem 0 0.8rem 0;
+    gap: 0.4rem;
+}
+
+.payment-item {
+    width: 20%;
 }
 
 .overlay {
@@ -987,6 +1083,10 @@ footer {
         display: none;
     }
 
+    .bottom-nav-mobile {
+        display: flex;
+    }
+
     .sidebar {
         display: none;
     }
@@ -1110,9 +1210,48 @@ footer {
         width: 80%;
     }
 
+    footer {
+        padding: 0.7rem 0 4rem 0;
+    }
 
     footer * {
         font-size: 0.95rem;
+    }
+
+    .footer-col {
+        overflow: hidden;
+        
+    }
+
+    .footer-title {
+        border-bottom: 2px solid #eaeaea;
+        padding: 0.8rem 0;
+        position: relative;
+    }
+
+    .icon-title {
+        display: block;
+    }
+
+    .footer-content {
+        padding: 0.8rem 0;
+        position: absolute;
+        top: -100%;
+        opacity: 0;
+        transform-origin: top;
+        transition: all .5s ease;
+    }
+
+    .delivery-logo {
+        width: 20%;
+    }
+
+    .payment-item {
+        width: 17%;
+    }
+
+    .to-top-btn {
+        display: none;
     }
 
 }
